@@ -1,0 +1,149 @@
+/* =========================
+   Menu page layout
+   ========================= */
+
+/* ページ全体（hero + 季節限定 + ランチ + ディナー） */
+.menu-all {
+  /* hero の外側で全体の余白を管理 */
+  padding: 40px 0 80px;
+}
+
+/* hero と「季節限定」のあいだにスペースを作る */
+.menu-all .hero {
+  margin-bottom: 40px;
+}
+
+/* 各セクション（季節限定 / ランチ / ディナー） */
+.menu-section {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;          /* スマホで左右がくっつかないように */
+  text-align: center;
+  font-size: 16px;
+}
+
+/* 季節限定の上は少しだけ余白 */
+.menu-section:first-of-type {
+  margin-top: 0;
+}
+
+/* ランチ・ディナーなど、セクション同士の間隔 */
+.menu-section + .menu-section {
+  margin-top: 72px;
+}
+
+/* セクション見出し */
+.menu-section-title {
+  font-size: 28px;
+  margin-bottom: 24px;      /* 見出しとカードの間 */
+  letter-spacing: 0.12em;
+}
+
+/* =========================
+   Menu cards
+   ========================= */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-top: 24px;
+}
+
+.menu-item {
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 正方形っぽく見せる画像ラッパ */
+.image-menu-square {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px; 
+}
+
+.image-menu-square img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* 料理名・説明・価格 */
+.menu-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.menu-description {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 8px;
+  text-align: left;
+}
+
+.menu-price {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 480px) {
+  .menu-all {
+    padding: 24px 0 56px;
+  }
+
+  .menu-all .hero {
+    margin-bottom: 24px;    /* SPでは少し詰める */
+  }
+
+  .menu-section {
+    font-size: 14px;
+  }
+
+  .menu-section + .menu-section {
+    margin-top: 48px;       /* SPではセクション間もやや詰める */
+  }
+
+  .menu-section-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;  /* 1列表示 */
+    row-gap: 24px;
+  }
+
+  .menu-item {
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 12px;
+  }
+
+  .image-menu-square {
+    max-width: 280px;
+  }
+
+  .menu-name {
+    font-size: 16px;
+  }
+}

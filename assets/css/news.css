@@ -1,0 +1,56 @@
+.news-table {
+  width: 100%;          /* 親に対して広がる */
+  max-width: 380px;     /* 最大幅を制限 */
+  margin: 16px auto;
+  padding: 0 16px;
+  line-height: 1.8;
+  font-size: 14px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.news-table td {
+  padding: 4px 0;
+  border: none; /* 明示的に消す */
+  vertical-align: top;
+}
+
+@media (max-width: 480px) {
+  .news-table {
+    font-size: 14px;
+    line-height: 1.9;
+    padding: 0 20px;
+  }
+}
+
+.news-date {
+  width: 120px;          /* 固定 */
+  min-width: 120px;
+  font-size: 0.85rem;
+  color: #777;
+  white-space: nowrap;
+}
+
+.news-text {
+  width: auto;           /* 残り */
+  text-align: left;      /* 本文は左揃え推奨 */
+}
+
+.news .title {
+  text-align: center;
+}
+
+.news .subtitle {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .news-date {
+    width: 100px;
+    min-width: 100px;
+    font-size: 0.8rem;
+  }
+}

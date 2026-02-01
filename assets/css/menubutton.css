@@ -1,0 +1,67 @@
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 220px;
+  margin: 40px auto;
+  padding: 14px 20px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: var(--kr-blue);
+  background: transparent;
+
+  border: 1.5px solid var(--kr-blue);
+  border-radius: 4px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+@media (max-width: 480px) {
+  .menu-button {
+    max-width: 260px; 
+    margin: 24px auto;  
+    padding: 18px 20px; 
+  }
+}
+
+.menu-button,
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:focus-visible {
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  background-color: rgba(31, 58, 95, 0.06); /* kr-blue の薄塗り */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.menu-button:focus-visible {
+  outline: 2px solid var(--kr-blue);
+  outline-offset: 3px;
+}
+
+.menu-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button .subtitle {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+
+

@@ -1,0 +1,33 @@
+/*
+ Theme Name: Kyoto-restaurant (TT1 Child)
+ Theme URI: https://aobacreate.net/kyoto-restaurant-tt1
+ Description: Twenty Twenty-One の子テーマ（Kyoto Restaurant 用）
+ Author: Aoba Create
+ Template: twentytwentyone
+ Version: 1.0
+ Text Domain: kyoto-restaurant
+*/
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-text-primary: #1e2a38;
+
+  --kr-blue: #2a4a78;
+  --kr-blue-light: #355b8f;
+  --kr-blue-dark: #1f3558;
+
+  color: var(--color-text-primary);
+  font-size: 16px;
+  line-height: 1.7;
+  background: whitesmoke !important;
+}
+
+h1, h2, h3,
+.hero-title {
+  font-family:
+    "Yu Mincho",
+    "YuMincho",
+    "Hiragino Mincho ProN",
+    serif;
+  letter-spacing: 0.05em;
+}
