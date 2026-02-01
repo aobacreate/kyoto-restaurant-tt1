@@ -31,7 +31,7 @@ $menu_sections = [
 foreach ($menu_sections as $section_label => $meta_value) :
 
   $args = [
-    'post_type'      => 'menu',
+    'post_type'      => 'restaurant_menu',
     'posts_per_page' => -1,
     'meta_query'     => [
       [
