@@ -5,7 +5,7 @@ This project is a **custom WordPress child theme built on Twenty Twenty-One**, c
 It represents a fictional Japanese restaurant, **“Kyoto Restaurant”**, and focuses on implementing a clean, traditional design using a **code-based WordPress approach**, without relying on the Site Editor.
 
 ## Demo
-🔗 https://aobacreate.net/kyoto-restaurant
+[Live demo](https://aobacreate.net/kyoto-restaurant)
 
 ## Overview
 Kyoto Restaurant is a sample restaurant website designed to showcase:
