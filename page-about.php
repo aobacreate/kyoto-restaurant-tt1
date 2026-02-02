@@ -30,10 +30,12 @@ get_template_part(
 
 <?php $about_paragraphs = get_about_description(); ?>
 
-<div class="about-description">
-  <?php foreach ( $about_paragraphs as $paragraph ) : ?>
-    <p><?php echo esc_html( $paragraph ); ?></p>
-  <?php endforeach; ?>
+<div class="about-wrapper">
+  <div class="about-description">
+    <?php foreach ( $about_paragraphs as $paragraph ) : ?>
+      <p><?php echo esc_html( $paragraph ); ?></p>
+    <?php endforeach; ?>
+  </div>
 </div>
 
 <div class="about-inner">
